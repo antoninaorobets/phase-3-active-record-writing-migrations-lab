@@ -4,3 +4,17 @@ require 'bundler/setup'
 Bundler.require(:default, ENV["RACK_ENV"])
 
 require_relative "../app/models/student"
+
+# ActiveRecord::Base.establish_connection(
+#     adapter: "sqlite3",
+#   database: "db/students.sqlite"
+# )
+
+# sql = <<-SQL
+#   CREATE TABLE IF NOT EXISTS students (
+#   id INTEGER PRIMARY KEY,
+#   name TEXT
+#   )
+# SQL
+
+# ActiveRecord::Base.connection.execute(sql)
